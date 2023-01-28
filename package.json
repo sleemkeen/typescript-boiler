@@ -1,0 +1,33 @@
+{
+  "name": "video-audio-functions",
+  "version": "1.0.0",
+  "description": "A Nodejs library to convert videos to mp4, Merge Videos, Merge Audio.Only works on the backend, that is, on Nodejs context, and this does not support the browser context because of an external dependency ffmpeg ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist*",
+    "build": "tsc",
+    "prepublish": "npm run clean && npm run build",
+    "docs": "typedoc"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sleemkeen/convert-video-to-mp4.git"
+  },
+  "keywords": [
+    "convert",
+    "video",
+    "mp4",
+    "ffmpeg",
+    "backend"
+  ],
+  "author": "Haruna Ahmadu <akhmadharuna@gmail.com> (https://github.com/sleemkeen)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  }
+}
